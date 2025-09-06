@@ -86,6 +86,14 @@ namespace HotelReservationsDemo
 			});
 			gridReservations.Columns.Add(new DataGridViewTextBoxColumn
 			{
+				DataPropertyName = nameof(ReservationItem.Services),
+				HeaderText = "Detalle Servicios",
+				ReadOnly = true,
+				Width = 200,
+                DefaultCellStyle = { }
+            });
+            gridReservations.Columns.Add(new DataGridViewTextBoxColumn
+			{
 				DataPropertyName = nameof(ReservationItem.Subtotal),
 				HeaderText = "Subtotal",
 				ReadOnly = true,
